@@ -1,0 +1,64 @@
+{
+  "name": "qiaomadai-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "homepage": "https://qqmadai10.github.io/finance",
+  "dependencies": {
+    "@google/genai": "*",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "lucide-react": "^0.577.0",
+    "motion": "^12.35.0",
+    "openai": "^6.27.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^6.28.0",
+    "recharts": "^3.7.0",
+    "tailwind-merge": "^3.5.0",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "@vercel/node": "^5.6.12",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.27",
+    "eslint": "^9.39.3",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "gh-pages": "^6.1.1",
+    "globals": "^17.4.0",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^4.9.5",
+    "vite": "^5.2.0"
+  },
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "node server.ts",
+   "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/qqmadai10/qqmadai.git"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

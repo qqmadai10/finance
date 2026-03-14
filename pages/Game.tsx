@@ -1,0 +1,1 @@
+// This file is deleted. Game functionality has moved to components/GameWidget.tsx
