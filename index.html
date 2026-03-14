@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/qiaomadai-website/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7c3aed" />
+    <meta name="description" content="金融助手 - 个人作品集网站" />
+    <title>qqmadai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Consolas"', '"Monaco"', '"Lucida Console"', 'monospace', 'sans-serif'], 
+              pixel: ['"Arial Black"', 'Impact', 'sans-serif'], 
+              retro: ['"Consolas"', '"Monaco"', 'monospace'],
+            },
+            colors: {
+              primary: {
+                50: '#f5f3ff',
+                100: '#ede9fe',
+                500: '#8b5cf6',
+                600: '#7c3aed',
+                700: '#6d28d9',
+              },
+              y2k: {
+                pink: '#FF00FF',
+                cyan: '#00FFFF',
+                lime: '#CCFF00',
+                yellow: '#FFD700',
+                brick: '#B22222',
+                silver: '#C0C0C0',
+                blue: '#0000FF'
+              }
+            },
+            boxShadow: {
+              'retro': '4px 4px 0px 0px #000000',
+              'retro-hover': '6px 6px 0px 0px #000000',
+              'retro-active': '2px 2px 0px 0px #000000',
+              'win95': 'inset 1px 1px #fff, inset -1px -1px #000, inset 2px 2px #dfdfdf, inset -2px -2px #808080',
+              'neon': '0 0 5px #00FFFF, 0 0 10px #00FFFF',
+            },
+            animation: {
+              'glitch': 'glitch 1s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'float-slow': 'float 8s ease-in-out infinite',
+              'bounce-pixel': 'bounce-pixel 1s steps(2, end) infinite',
+              'walk': 'walk 4s linear infinite',
+              'cloud-move': 'cloud-move 20s linear infinite',
+              'spin-slow': 'spin 8s linear infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              glitch: {
+                '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
+                '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
+                '62%': { transform: 'translate(0,0) skew(5deg)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              'bounce-pixel': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-4px)' },
+              },
+              'cloud-move': {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(100vw)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #E0E0E0;
+        background-image: 
+          linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc), 
+          linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc);
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+        color: #000;
+        font-family: 'Consolas', monospace;
+        font-weight: 700; 
+        -webkit-font-smoothing: none;
+      }
+      
+      /* Custom Scrollbar - Retro Silver */
+      ::-webkit-scrollbar { width: 14px; }
+      ::-webkit-scrollbar-track { background: #c0c0c0; border-left: 1px solid #fff; }
+      ::-webkit-scrollbar-thumb { 
+        background: #c0c0c0; 
+        border: 1px solid #fff;
+        box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px #808080;
+      }
+
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/finance/assets/index-BHrj458v-1773487718145.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
